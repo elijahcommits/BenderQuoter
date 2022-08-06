@@ -8,7 +8,7 @@ const getBenderQuote = () => {
     .then(response => response.json())
     .then(data => {
       quoteText.innerText = data.quote;
-      quoteAuthor.innerText = data.who;
+      quoteAuthor.innerText = "Bender";
     });
   
   setTimeout(() => { btn.classList.add("btn__active") }, 2000);
@@ -35,6 +35,8 @@ quote.addEventListener("click", newBenderQuote);
 //       quoteText.innerText = data.quote;
 //       quoteAuthor.innerText = data.who;
 //     });
+
+//   setTimeout(() => { btn.classList.add("btn__active") }, 2000);
 // }
 
 // const newFuturamaQuote = e => {
