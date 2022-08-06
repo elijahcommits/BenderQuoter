@@ -48,11 +48,17 @@ body {
   padding: 0.5rem;
   border: 2px solid hsl(0, 0%, 40%);
   border-radius: 5px;
+
+  background: linear-gradient(to right, hsl(0, 0%, 40%) 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
 .btn.btn__active {
   color: hsl(0, 0%, 90%);
   background-color: hsl(0, 0%, 50%);
+  background-position: left bottom;
 }
 
 .btn.btn__active:hover {

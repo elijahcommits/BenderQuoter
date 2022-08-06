@@ -3,20 +3,20 @@ let quoteText = document.querySelector(".quote__text");
 let quoteAuthor = document.querySelector(".quote__author");
 let btn = document.querySelector(".btn");
 
-const getBenderQuote = () => {
-  fetch("https://bender.sierrasoftworks.com/api/v1/quote/bender")
-    .then(response => response.json())
-    .then(data => {
-      quoteText.innerText = data.quote;
-      quoteAuthor.innerText = "Bender";
-    });
-  
-  setTimeout(() => { btn.classList.add("btn__active") }, 2000);
+const getBenderQuote = async () => {
+  // declare variables
+  const response = await fetch("https://bender.sierrasoftworks.com/api/v1/quote/bender");
+  const data = await response.json();
+  // inject quote and name
+  quoteText.innerText = data.quote;
+  quoteAuthor.innerText = "Bender";
+  // change button to active using btn__active class
+  btn.classList.add("btn__active");
 }
 
 
-const newBenderQuote = e => {
-  if (!e.target.matches(".btn")) return;
+const newBenderQuote = event => {
+  if (!event.target.matches(".btn")) return;
   getBenderQuote();
   btn.classList.remove("btn__active");
 }
