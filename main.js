@@ -10,6 +10,9 @@ let notAccessed = [];
 const randomItemFromArray = (myArray) => {
   if (notAccessed.length === 0) {
     for (let i = 0; i < myArray.length; i++) notAccessed.push(i);
+  } else if (notAccessed.length >= myArray.length) {
+    notAccessed = [];
+    for (let i = 0; i < myArray.length; i++) notAccessed.push(i);
   }
   let randomIndex = Math.floor(Math.random() * notAccessed.length);
   let indexOfItem = notAccessed[randomIndex];
@@ -29,7 +32,7 @@ const getBenderQuote = () => {
 
   // access DOM to change quote text
   quoteText.innerText = randomItemFromArray(benderQuotes);
-  quoteAuthor.innerText = "Bender";
+  quoteAuthor.innerHTML = "Bender B.&puncsp;Rodríguez";
 
   // change button to active using btn__active class
   setTimeout(() => {
