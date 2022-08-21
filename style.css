@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'FuturamaBoldFont';
+  src: url('fonts/FuturamaBoldFont.woff2') format('woff2'),
+      url('fonts/FuturamaBoldFont.woff') format('woff'),
+      url('fonts/FuturamaBoldFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,17 +40,20 @@ body {
 
 .quote__text {
   color: hsl(0, 0%, 0%);
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 1rem 0.25rem 0.5rem 0.25rem;
 }
 
 .quote__author {
   color: hsl(0, 0%, 50%);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   padding: 0.5rem 0.25rem 2rem 0.25rem;
+  font-weight: 600;
+  letter-spacing: 1.75px;
 }
 
 .btn {
+  font-family: 'FuturamaBoldFont';
   color: hsl(0, 0%, 40%);
   font-size: 1.1rem;
   font-weight: bold;
