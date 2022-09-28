@@ -308,7 +308,7 @@ export const futuramaQuotes = [
     who: 'Fry'
   },
   {
-    quote: 'It\'s one thing to win a fixed fight; there\'s dignity in that. But to lose!',
+    quote: 'It\'s one thing to win a fixed fight; there\'s dignity in that. But to lose?',
     who: 'Bender'
   },
   {
