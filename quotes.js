@@ -292,7 +292,7 @@ export const futuramaQuotes = [
     who: 'Bender'
   },
   {
-    quote: 'Now, my usual fee is $500. But seeing as how its you, I\'ll need it all in advance.',
+    quote: 'Now, my usual fee is $500. But seeing as how it\'s you, I\'ll need it all in advance.',
     who: 'Bender'
   },
   {
